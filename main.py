@@ -35,7 +35,6 @@ for filename in os.listdir("cmds"):
             bot.load_extension(f"cmds.{filename[:-3]}")
             Logger.debug("EXT LOADED - {}".format(filename))
         except Exception as err:
-            Logger.debug("EXT FAILED - {} | {}".format(filename, traceback.format_exception_only(err.__class__, err)[0]))
-            Logger.debug("Stack: ", exc_info=True) 
+            Logger.debug("EXT FAILED - {}".format(filename))
 
 bot.run(config["TOKEN"])
