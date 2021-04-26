@@ -20,6 +20,8 @@ class Scheduler(CogExt):
         timeArr = time.split(":")
         timeArgs = len(timeArr)
         totalSecs = 0
+        
+        # invalid timecode
         if (timeArgs > 4):
             errEmbed = discord.Embed(
                 color=discord.Colour.magenta(),
@@ -42,8 +44,8 @@ class Scheduler(CogExt):
         pingChannel = "Universal"
         pingChannelID = ""
 
+        # parse args
         text = ""
-
         if (len(args) > 0):
             if args[0].startswith("-"):
                 # has modifier
