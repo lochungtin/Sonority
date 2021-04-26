@@ -1,6 +1,6 @@
 <img src="./img/SonorityLogo.png" style="height: 150px">
 
-# Sonority
+## Sonority
 Multi-Channel Ping Alarm Scheduler for Discord Servers
 
 Sonority is a discord alarm bot coded in discord.py with virtually infinite alarm channels.
@@ -9,8 +9,8 @@ Sonority is a discord alarm bot coded in discord.py with virtually infinite alar
 - Timer - Expires after duration
 - Alarm - Expires when date/time is reached
 
-## Usage
-### Setting a timer
+### Usage
+#### Setting a timer
 ```
 s.timer duration [-option] [*description]
 ```
@@ -30,7 +30,7 @@ description: (optional)
     string of words describing the event for the timer
 ```
 
-### Setting an alarm
+#### Setting an alarm
 ```
 s.alarm time [date] [-option] [*description]
 ```
